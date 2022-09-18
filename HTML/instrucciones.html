@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/instrucciones.css">
+    <title>Instruciones - Prode 2022</title>
+</head>
+<body>
+
+    <header class="cont-buttons">
+
+        <button id="loggin" class="sesion" ><span>Ingresar</span></button>
+
+        <button id="home" class="home"> <img src="/IMG/icons8-casa-30.png" alt=""> <span>Inicio</span> </button>
+
+        <button id="simulator" class="simulator" a href="#"> <span>Simulador</span></a> </button>
+      
+    </header>
+
+
+    <section class="instructions">
+        <h1>INSTRUCCIONES</h1>
+        <ul class="listInstrucciones" id="instruc">
+            <li>El prode tiene un valor inicial de <b> $2.000</b></li>
+            <li>Se va a dividir en 2 Etapas:
+                <li class="lis1">Fase de grupos</li>
+                <li class="lis1">Playoffs</li>
+            </li>
+            <li>Cada jugador tiene tiempo de completar sus partidos hasta el <b>...</b> </li>
+            <li>Los puntos de cada partido se van a dividir de la siguiente manera:
+                <li class="lis2"> <span> 1 Punto: </span>si acertas quien gana, independientemente de los goles marcados</li>
+                <li class="lis2"><span> 2 Puntos: </span> si acertas la cantidad de goles marcados en ese partido por equipo, sin importar el resutado</li>
+                <li class="lis2"><span> 3 Puntos </span>  si acertas exactamente el resultado</li>
+            </li>
+            <span>Caso de Ejemplo: Si el partido real sale Equipo A: 1 vs Equipo B: 0</span>
+                <li>se va a llevar <span> 1 Punto </span> quien haya puesto <span> Equipo A: 1 vs Equipo B: 2</span> (solamente acerto que el Equipo A convertia 1 solo gol)</li>
+                <li>Se va a llevar <span> 2 Puntos </span> quien hasta puesto <span> Equipo A: 2 vs Equipo B: 0</span>
+                     (ya que tiene 1 punto por acertar que 
+                    Equipo B no convertia y 1 punto mas por acertar que ganaba Equipo A</li>
+                <li>Se va a llevar <span> 3 Puntos</span> al que haya puesto <span> Equipo A: 1 vs Equipo B: 0 </span> (ya que acerto exacto el resultado)</li>
+                <li>En cada fecha, cada participante tendra la opcion de marcar un partido <span> "Estrella"</span>,
+                     lo cual duplicara el puntaje que haya obtenido en ese partido</li>
+        </ul>
+    </section>
+    
+    <script src="/JS/instrucciones.js"></script>
+</body>
+</html>
