@@ -6,6 +6,8 @@ let passTomas = "tenista1"
 
 let d = document;
 let buttonLoggin = d.getElementById("loggin")
+let userIncorrect = d.getElementById("userIncorrect")
+let passIncorrect = d.getElementById("passIncorrect")
 
 //eventos //
 
@@ -21,8 +23,9 @@ function ingresar (e) {
     if (inputUser === userTomas && inputPass === passTomas) {
        d.location="tomas.html"
     } else if (inputUser !== userTomas && inputPass === passTomas) {
-        alert("Usuario incorrecto")
+        userIncorrect.innerHTML="Usuario incorrecto"
     } else if (inputUser === userTomas && inputPass !== passTomas) {
-        alert("contraseña Incorrecta")
-    } else alert("El usuario y la Contraseña son incorrectos")
+        passIncorrect.innerHTML="Contraseña Incorrecta"
+    } else userIncorrect.innerHTML="Usuario incorrecto", 
+    passIncorrect.innerHTML="Contraseña Incorrecta"
 }
