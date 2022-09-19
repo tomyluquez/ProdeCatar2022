@@ -1,7 +1,8 @@
 /* Rooteos */
 :root{
     --blanco: #fafafa;
-    --catar: #B10033;
+    --catar: rgb(177,0,51);
+    --catarGradient: linear-gradient(180deg, rgba(177,0,51,1) 0%, rgba(46,21,23,1) 98%);
     --transparencia: #00000062;
     --backgroundButtons: #EEAA07;
 }
@@ -17,6 +18,7 @@
 
 body{
     background-color: var(--catar);
+    background: var(--catarGradient);
     padding:1.5rem
 }
 
@@ -117,6 +119,7 @@ button:hover{
 button:hover::after{
     top: 0;
 }
+
 
 /* Media Queries */
 

@@ -1,7 +1,9 @@
 /* Rooteos */
 :root{
     --blanco: #fafafa;
-    --catar: #B10033;
+    /* --catar: #B10033; */
+    --catar: rgb(177,0,51);
+    --catarGradient: linear-gradient(180deg, rgba(177,0,51,1) 0%, rgba(46,21,23,1) 98%);
     --transparencia: #00000062;
     --backgroundButtons: #EEAA07;
 }
@@ -17,24 +19,47 @@
 
 body{
     background-color: var(--catar);
-    padding:1.5rem
+    background: var(--catarGradient);
+    padding:1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Elementos contendores */
-header{
+.cont-buttons{
     width: 100%;
     height: 500px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    gap: 3rem;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.texto{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
 /* Elementos hijos */
+img{
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    bottom: 10px;
+}
+
 h1{
     text-align: center;
+    width: 100%;
     height: auto;
-    margin: 2rem 0;
     color: var(--blanco);
 }  
 
