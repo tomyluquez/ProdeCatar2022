@@ -19,5 +19,217 @@
 body{
     background-color: var(--catar);
     background: var(--catarGradient);
-    padding:1.5rem
+    padding:1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Estilos de los contenedores */
+
+.titulo{
+    width: 100%;
+    text-align: center;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--blanco);
+}
+
+.cont-form{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: 100%;
+    height: 100%;
+    min-height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+}
+
+/* Estilos individuales */
+
+.userLabel{
+    width: 80%;
+    position: absolute;
+    top: 90;
+    left: 33;
+    border-bottom: 1px solid #fafafa;
+    pointer-events: none;
+}
+
+.passLabel{
+    width: 80%;
+    position: absolute;
+    top: 160;
+    left: 33;
+    border-bottom: 1px solid #fafafa;
+    pointer-events: none;
+}
+
+#userInput, #passInput{
+    width: 80%;
+    background: transparent;
+    border: none;
+    color: var(--blanco);
+    outline: 0px;
+    margin-top: 1rem;
+}
+
+.userLabel span{
+    position: absolute;
+    bottom:  5px;
+    transition: all 0.3s ease;
+    color: #fafafa;
+}
+
+.passLabel span{
+    position: absolute;
+    bottom:  5px;
+    transition: all 0.3s ease;
+    color: #fafafa;
+}
+
+.ingresar{
+    width: 80%;
+    margin-top: 3rem;
+    height: 40px;
+    text-transform: uppercase;
+    padding: 0 1rem;
+    color: var(--blanco);
+    background-color: var(--transparencia);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+button span{
+    z-index: 900;
+    position: relative;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+img{
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    bottom: -215px;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+/* Pseudos elementos */
+
+.ingresar::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--backgroundButtons);
+    position: absolute;
+    left: 0;
+    top: -40;
+    z-index: 0;
+    transition: all 0.3s ease-in-out;
+    color: black;
+}
+
+.ingresar:hover{
+    color: black
+}
+
+.ingresar:hover::after{
+    top: 0;
+}
+
+
+.userLabel:after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: -1;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid var(--backgroundButtons);
+    transform: translateX(-150%);
+    transition: all 0.3s ease;
+}
+
+.passLabel:after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -1;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid var(--backgroundButtons);
+    transform: translateX(-150%);
+    transition: all 0.3s ease;
+}
+
+input:focus + label span, 
+input:valid + label span{
+    transform: translateY(-20px);
+    color: var(--backgroundButtons);
+    font-size: 10px;
+}
+
+input:focus + label::after{
+    transform: translateX(0)
+}
+
+
+/* Media Queries */
+
+@media (min-width: 600px) {
+
+        #passInput, #userInput{
+            width: 30%;
+        }
+
+        .userLabel{
+            width: 30%;
+            top: 98;
+            left: auto;
+        }
+
+        .passLabel{
+            width: 30%;
+            left: auto;
+            top: 165;
+        }
+
+        .userLabel::after,
+        .passLabel:after {
+            transform: translateX(-250%);
+        }
+
+        .ingresar{
+            width: 30%;
+        }
+
+        h2{
+            font-size: 3rem;
+        }
+    
 }
