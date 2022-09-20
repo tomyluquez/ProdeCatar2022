@@ -63,38 +63,23 @@ form{
 
 /* Estilos individuales */
 
-.userLabel{
-    width: 80%;
-    position: absolute;
-    top: 90;
-    left: 33;
-    border-bottom: 1px solid #fafafa;
-    pointer-events: none;
-}
-
 .passLabel{
     width: 80%;
     position: absolute;
-    top: 160;
+    top: 120;
     left: 33;
     border-bottom: 1px solid #fafafa;
     pointer-events: none;
 }
 
-#userInput, #passInput{
+#passInput{
     width: 80%;
     background: transparent;
     border: none;
     color: var(--blanco);
     outline: 0px;
     margin-top: 1rem;
-}
-
-.userLabel span{
-    position: absolute;
-    bottom:  5px;
-    transition: all 0.3s ease;
-    color: #fafafa;
+    padding: 1rem 0;
 }
 
 .passLabel span{
@@ -106,8 +91,26 @@ form{
 
 .ingresar{
     width: 80%;
-    margin-top: 3rem;
+    margin-bottom: 5rem;
     height: 40px;
+    text-transform: uppercase;
+    padding: 0 1rem;
+    color: var(--blanco);
+    background-color: var(--transparencia);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.home{
+    width: 80%;
+    height: 40px;
+    margin-top: -7rem;
     text-transform: uppercase;
     padding: 0 1rem;
     color: var(--blanco);
@@ -157,7 +160,7 @@ h2{
 
 /* Pseudos elementos */
 
-.ingresar::after{
+.ingresar::after, .home::after{
     content: "";
     width: 100%;
     height: 100%;
@@ -170,11 +173,11 @@ h2{
     color: black;
 }
 
-.ingresar:hover{
+.ingresar:hover, .home:hover{
     color: black
 }
 
-.ingresar:hover::after{
+.ingresar:hover::after, .home:hover::after{
     top: 0;
 }
 
@@ -242,6 +245,12 @@ input:focus + label::after{
 
         .ingresar{
             width: 30%;
+            margin-top: 7rem;
+        }
+
+        .home{
+            width: 30%;
+            margin-top: -3rem;
         }
 
         h2{

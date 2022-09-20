@@ -21,3 +21,230 @@ body{
     background: var(--catarGradient);
     padding:1.5rem
 }
+
+/* Elementos contendores */
+header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.contResultSimu{
+    width: 100%;
+    height: 180px;
+    background-color: var(--transparencia);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.contResultReal{
+    width: 100%;
+    height: 180px;
+    background-color: var(--transparencia);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.contAbreviados{
+    display: flex;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 6rem;
+
+}
+
+.contEquipos{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.puntaje{
+    width: 100%;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Estilos individuales */
+
+button{
+    width: 250px;
+    height: 40px;
+    padding: 0 1rem;
+    color: var(--blanco);
+    background-color: var(--transparencia);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.home{
+    width: 100px;
+}
+.home span{
+    display: none;
+}
+
+button span, img{
+    z-index: 900;
+    position: relative;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.imgHome{
+    width: 30px;
+    height: auto;
+    color: white;
+}
+
+img{
+    width: 40px;
+    height: 30px;
+}
+
+input{
+    width: 30px;
+    height: 30px;
+    border: none;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#argREal, #saudiReal{
+    background: transparent;
+    color: var(--blanco);
+}
+
+.contEquipos span{
+    color: var(--blanco);
+    font-weight: 500;
+}
+
+h3{
+    position: absolute;
+    left: 15;
+    top: 60
+}
+
+h4{
+    width: 100%;
+    font-size: 1.5rem;
+    color: var(--blanco);
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
+
+h5{
+   text-align: center; 
+    width: 100%;
+    font-size: 1.5rem;
+    color: var(--blanco);
+    margin-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.simularResult{
+    position: absolute;
+    bottom: 0px;
+}
+
+.puntaje span{
+    font-size: 3rem;
+    border: 2px dotted   var(--blanco);
+    padding: 0.5rem 2.5rem;
+    margin-top: 3rem;
+    color: #fafafa;
+}
+.puntaje h3{
+    font-size: 1rem;
+    color: var(--blanco);
+}
+
+.puntaje p{
+    margin: 1.5rem 0;
+    color: var(--blanco);
+    text-align: center;
+}
+
+/* Pseudos elementos */
+
+button::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--backgroundButtons);
+    position: absolute;
+    left: 0;
+    top: -60;
+    z-index: 0;
+    transition: all 0.3s ease-in-out;
+    color: black;
+}
+
+button:hover{
+    color: black
+}
+
+button:hover::after{
+    top: 0;
+}
+
+/* Media Queries */
+
+@media (min-width:600px) {
+
+    h4{
+        left: 630;
+        top: 20px;
+    }
+
+    h3{
+        top: 0;
+        left: 710;
+        margin-top: 1rem;
+    }
+
+    .home img{
+        display: none;
+    }
+    .home span{
+        display: block;
+    }
+    .home{
+        width: 250px;
+    }
+
+    .contResultSimu{
+        height: 220px;
+    }
+
+}

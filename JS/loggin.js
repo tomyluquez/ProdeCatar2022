@@ -1,31 +1,29 @@
 // variables generales //
-let userTomas = "tomas"
 let passTomas = "tenista1"
 
 // elementos del DOM en variables //
 
 let d = document;
 let buttonLoggin = d.getElementById("loggin")
-let userIncorrect = d.getElementById("userIncorrect")
 let passIncorrect = d.getElementById("passIncorrect")
+let buttonHome = d.getElementById("home")
 
 //eventos //
 
 buttonLoggin.addEventListener("click", ingresar)
+buttonHome.addEventListener("click", goToHome)
 
 // funciones //
 
 function ingresar (e) {
     e.preventDefault()
-    let inputUser = d.getElementById("userInput").value
     let inputPass = d.getElementById("passInput").value
 
-    if (inputUser === userTomas && inputPass === passTomas) {
+    if (inputPass === passTomas) {
        d.location="tomas.html"
-    } else if (inputUser !== userTomas && inputPass === passTomas) {
-        userIncorrect.innerHTML="Usuario incorrecto"
-    } else if (inputUser === userTomas && inputPass !== passTomas) {
-        passIncorrect.innerHTML="Contraseña Incorrecta"
-    } else userIncorrect.innerHTML="Usuario incorrecto", 
-    passIncorrect.innerHTML="Contraseña Incorrecta"
+    } else passIncorrect.innerHTML="Contraseña Incorrecta"
+}
+
+function goToHome () {
+    d.location="index.html"
 }

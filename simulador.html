@@ -7,6 +7,64 @@
     <title>Simulador - Prode 2022</title>
 </head>
 <body>
-    
+
+    <header class="cont-buttons">
+
+        <button id="loggin" class="sesion" ><span>Ingresar</span></button>
+
+        <button id="home" class="home"> <img class="imgHome" src="/IMG/icons8-casa-30.png" alt=""> <span>Inicio</span> </button>
+
+        <button id="simulator" class="simulator" a href="#"> <span>Instrucciones</span></a> </button>
+      
+    </header>
+
+
+    <div class="contResultReal" id="resultReal">
+
+        <div>
+            <h5>Resultado Real</h5>
+        </div>
+        <div class="contEquipos">
+            <div class="abreviadoArg"> <span>ARG</span> </div>
+            <img src="/IMG/argentina.jpg" alt="">
+            <input type="text" name="argSimu" id="argReal" disabled>
+            <span>-</span>
+            <input type="text" name="saudiSimu" id="saudiReal" disabled>
+            <img src="/IMG/arabiaSaudi.png" alt="">
+            <div class="abreviadoSaudi"> <span>SAU</span> </div>
+        </div>
+
+    </div>
+
+    <div class="contResultSimu">
+
+        <div class="contTituloSimu">
+            <h4>Simula tu resultado</h4>
+        </div>
+        <div class="contEquipos">
+            <div class="abreviadoArg"> <span>ARG</span> </div>
+            <img src="/IMG/argentina.jpg" alt="">
+            <input type="text" name="argSimu" id="argSimu" required>
+            <span>-</span>
+            <input type="text" name="saudiSimu" id="saudiSimu" required>
+            <img src="/IMG/arabiaSaudi.png" alt="">
+            <div class="abreviadoSaudi"> <span>SAU</span> </div>
+        </div>
+        
+        <button class="simularResult" id="boton"> <span>Simular</span> </button>
+
+    </div>
+
+    <div class="puntaje" id="puntaje">
+        <h3>PUNTOS</h3>
+        <span id="resultado">-</span>
+        <p id="explicacion"></p>
+    </div>
+
+
+
+
+
+<script src="/JS/simulador.js"></script>
 </body>
 </html>
