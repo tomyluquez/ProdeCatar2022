@@ -19,9 +19,11 @@ function ingresar (e) {
     e.preventDefault()
     let inputPass = d.getElementById("passInput").value
 
-    if (inputPass === passTomas) {
-       d.location="tomas.html"
-    } else passIncorrect.innerHTML="Contraseña Incorrecta"
+    inputPass === passTomas ? d.location="tomas.html" : passIncorrect.innerHTML="Contraseña Incorrecta"
+
+    // if (inputPass === passTomas) {
+    //    d.location="tomas.html"
+    // } else passIncorrect.innerHTML="Contraseña Incorrecta"
 }
 
 function goToHome () {

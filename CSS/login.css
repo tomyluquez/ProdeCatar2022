@@ -222,23 +222,17 @@ input:focus + label::after{
 
 @media (min-width: 600px) {
 
-        #passInput, #userInput{
+        #passInput{
             width: 30%;
+            /* border:  1px solid black; */
+            position: absolute;
+            top: 100;
         }
-
-        .userLabel{
-            width: 30%;
-            top: 98;
-            left: auto;
-        }
-
         .passLabel{
             width: 30%;
             left: auto;
             top: 165;
         }
-
-        .userLabel::after,
         .passLabel:after {
             transform: translateX(-250%);
         }
@@ -246,6 +240,8 @@ input:focus + label::after{
         .ingresar{
             width: 30%;
             margin-top: 7rem;
+            position: absolute;
+            bottom: 0;
         }
 
         .home{
@@ -257,14 +253,9 @@ input:focus + label::after{
             font-size: 3rem;
         }
 
-        #userIncorrect{
-            left: 520px;
-            top: 100px
-        }
-
-        #passIncorrect{
-            left: 520px;
-            top: 165px
+        input:focus + label span, 
+        input:valid + label span{
+            transform: translateY(-30px);
         }
     
 }
@@ -274,9 +265,4 @@ input:focus + label::after{
 .red{
     border-bottom: 3px solid red;
     color: red;
-}
-
-.green{
-    border-bottom: 3px solid green;
-    color: green;
 }

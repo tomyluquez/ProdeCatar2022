@@ -1,0 +1,217 @@
+/* Rooteos */
+:root{
+    --blanco: #fafafa;
+    --catar: rgb(177,0,51);
+    --catarGradient: linear-gradient(180deg, rgba(177,0,51,1) 0%, rgba(46,21,23,1) 98%);
+    --transparencia: #00000062;
+    --backgroundButtons: #EEAA07;
+}
+
+/* Estilos generales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background-color: var(--catar);
+    background: var(--catarGradient);
+    padding:1.5rem;
+    color: var(--blanco);
+}
+
+/* Estilos Individuales */
+
+header{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+section{
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid black;
+}
+
+aside{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0; /*al tener una posicion fixed, podes estirarlo poniendolo 0 a todos los lados*/
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 898;
+    transform: translateY(-100%);
+    transition: all 0.5s ease;
+}
+
+a{
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+.puntos{
+    font-size: 3rem;
+}
+
+#btnMenu{
+    position: fixed;
+    bottom: 20;
+    background-color: red;
+    border-radius: 50%;
+    width: 60px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 899;
+}
+
+h5{
+    width: 100%;
+    border: 1px solid black;
+    background-color: black;
+    color: var(--blanco);
+}
+td{
+    border: 1px solid black;
+}
+
+.paises{
+    text-align: left;
+}
+
+/* contenedores generales */
+
+.fecha1, .fecha2, .fecha3{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.partido1, .partido2{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    color: var(--blanco);
+}
+
+.local, .visitante{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contSubmit{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+
+.contSubmit p{
+    font-size: 2rem;
+}
+
+/* Fechas */
+
+
+table{
+    width: 100%;
+    height: 180px;
+    text-align: center;
+    color: var(--blanco);
+    margin-bottom: 2rem;
+}
+
+
+/*Inputs */
+
+.resultados{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#bonus{
+    width: 20px;
+}
+
+.button{
+    width: 90%;
+    height: 40px;
+    color: var(--blanco);
+    background-color: var(--transparencia);
+    border: none;
+    border-radius: 5px;
+    font-size: smaller;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* JavaScript */
+
+.translate{
+    transform: translateY(0);
+}
+
+/* Pseudos elementos */
+
+.button::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    font-size: 0.2rem;
+    background-color: var(--backgroundButtons);
+    position: absolute;
+    left: 0;
+    top: -60;
+    z-index: 0;
+    transition: all 0.3s ease-in-out;
+    color: black;
+}
+
+.button:hover{
+    color: black;
+}
+
+.button:hover::after{
+    top: 0;
+}
+
+.button span{
+    z-index: 800;
+    position: relative;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
