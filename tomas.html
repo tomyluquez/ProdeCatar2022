@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,13 @@
     <link rel="stylesheet" href="/CSS/tomas.css">
     <title>Tomas - Prode 2022</title>
 </head>
+
 <body>
     <header>
         <h3>Tomas - Prode 2022</h3>
     </header>
 
-    <aside id="menuGrupos"class="contGrupos">
+    <aside id="menuGrupos" class="contGrupos">
         <a class="links" href="#grupoA" id>Grupo A</a>
         <a class="links" href="#grupoB" id>Grupo B</a>
         <a class="links" href="#grupoC" id>Grupo C</a>
@@ -25,8 +27,9 @@
     </aside>
 
     <main>
-        <section id="grupoA">
-            <h3>grupo a</h3>
+
+        <section id="grupoA" class="grupo A">
+            <h3>grupo A</h3>
             <h4>Tus predicciones</h4>
             <div class="contPredicciones">
 
@@ -35,30 +38,30 @@
                     <div class="partido1">
                         <div class="local">
                             <input type="checkbox" name="bonus" id="bonus">
-                            <img src="/IMG/qatar.gif" alt="bandera Qatar">
+                            <img id="banderaCatar" src="/IMG/qatar.gif" alt="bandera Qatar">
                             <p>QAT</p>
-                            <input class="resultados" type="text">
+                            <input class="resultados" value="0" type="text" id="qp1s">
                         </div>
-                        <div class="visitante">    
-                            <input class="resultados" type="text">
+                        <div class="visitante">
+                            <input class="resultados" value="2" type="text" id="ep1s">
                             <p>ECU</p>
                             <img src="/IMG/ecuador.gif" alt="bandera ecuador">
-                            <p>2</p>
-                        </div>    
+                            <p class="pp gA" id="pp1s">0</p>
+                        </div>
                     </div>
                     <div class="partido2">
                         <div class="local">
                             <input type="checkbox" name="bonus" id="bonus">
                             <img src="/IMG/senegal.gif" alt="bandera Senegal">
                             <p>SEN</p>
-                            <input class="resultados" type="text">
+                            <input class="resultados" value="3" type="text" id="sp1s">
                         </div>
-                        <div class="visitante">    
-                            <input class="resultados" type="text">
+                        <div class="visitante">
+                            <input class="resultados" value="1" type="text" id="hp1s">
                             <p>HOL</p>
                             <img src="/IMG/paisesbajos.gif" alt="bandera Holanda">
-                            <p>2</p>
-                        </div>    
+                            <p class="pp gA" id="pp2s">0</p>
+                        </div>
                     </div>
                 </div>
 
@@ -69,28 +72,28 @@
                             <input type="checkbox" name="bonus" id="bonus">
                             <img src="/IMG/qatar.gif" alt="bandera Qatar">
                             <p>QAT</p>
-                            <input class="resultados" type="text">
+                            <input class="resultados" value="2" type="text" id="qp2s">
                         </div>
-                        <div class="visitante">    
-                            <input class="resultados" type="text">
+                        <div class="visitante">
+                            <input class="resultados" value="0" type="text" id="sp2s">
                             <p>SEN</p>
                             <img src="/IMG/senegal.gif" alt="bandera ecuador">
-                            <p>2</p>
-                        </div>    
+                            <p class="pp gA" id="pp3s">0</p>
+                        </div>
                     </div>
                     <div class="partido2">
                         <div class="local">
                             <input type="checkbox" name="bonus" id="bonus">
                             <img src="/IMG/paisesbajos.gif" alt="bandera Senegal">
                             <p>HOL</p>
-                            <input class="resultados" type="text">
+                            <input class="resultados" value="1" type="text" id="hp2s">
                         </div>
-                        <div class="visitante">    
-                            <input class="resultados" type="text">
+                        <div class="visitante">
+                            <input class="resultados" value="1" type="text" id="ep2s">
                             <p>ECU</p>
                             <img src="/IMG/ecuador.gif" alt="bandera Holanda">
-                            <p>2</p>
-                        </div>    
+                            <p class="pp gA" id="pp4s">0</p>
+                        </div>
                     </div>
                 </div>
 
@@ -101,35 +104,31 @@
                             <input type="checkbox" name="bonus" id="bonus">
                             <img src="/IMG/paisesbajos.gif" alt="bandera Qatar">
                             <p>HOL</p>
-                            <input class="resultados" type="text">
+                            <input class="resultados" value="0" type="text" id="hp3s">
                         </div>
-                        <div class="visitante">    
-                            <input class="resultados" type="text">
+                        <div class="visitante">
+                            <input class="resultados" value="0" type="text" id="qp3s">
                             <p>QAT</p>
                             <img src="/IMG/qatar.gif" alt="bandera ecuador">
-                            <p>2</p>
-                        </div>    
+                            <p class="pp gA" id="pp5s">0</p>
+                        </div>
                     </div>
                     <div class="partido2">
                         <div class="local">
                             <input type="checkbox" name="bonus" id="bonus">
                             <img src="/IMG/ecuador.gif" alt="bandera Senegal">
                             <p>ECU</p>
-                            <input class="resultados" type="text">
+                            <input class="resultados" value="1" type="text" id="ep3s">
                         </div>
-                        <div class="visitante">    
-                            <input class="resultados" type="text">
+                        <div class="visitante">
+                            <input class="resultados" value="2" type="text" id="sp3s">
                             <p>SEN</p>
                             <img src="/IMG/senegal.gif" alt="bandera Holanda">
-                            <p>2</p>
-                        </div>    
+                            <p class="pp gA" id="pp6s">0</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="contSubmit">
-                    <button class="button" id="enviar"> <span>Guardar Predicciones</span></button>
-                    <p>10</p>
-                </div>
 
 
                 <table>
@@ -142,44 +141,49 @@
                         <td>Gc</td>
                         <td>Dif</td>
                     </tr>
-                    <tr>
+                    <tr class="primero">
                         <td>1</td>
-                        <td class="paises"> <img src="/IMG/qatar.gif" alt=""> Qatar</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
+                        <td class="posicion gAS" id="pais"> <img src="/IMG/qatar.gif" alt=""> Qatar</td>
+                        <td class="posicion gAS" id="primeroAPtsS">0</td>
+                        <td class="posicion gAS" id="primeroAPjS">0</td>
+                        <td class="posicion gAS" id="primeroAGfS">0</td>
+                        <td class="posicion gAS" id="primeroAGcS">0</td>
+                        <td class="posicion gAS" id="primeroADifS">0</td>
+                    </tr>
+                    <tr class="segundo">
+                        <td>2</td>
+                        <td class="posicion gAS" id="pais"> <img src="/IMG/ecuador.gif" alt=""> Ecuador</td>
+                        <td class="posicion gAS" id="segundoAPtsS">0</td>
+                        <td class="posicion gAS" id="segundoAPjS">0</td>
+                        <td class="posicion gAS" id="segundoAGfS">0</td>
+                        <td class="posicion gAS" id="segundoAGcS">0</td>
+                        <td class="posicion gAS" id="segundoADifS">0</td>
                     </tr>
                     <tr>
-                        <td>1</td>
-                        <td class="paises"><img src="/IMG/ecuador.gif" alt=""> Ecuador</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
+                        <td>3</td>
+                        <td class="posicion gAS" id="pais"> <img src="/IMG/paisesbajos.gif" alt=""> Holanda</td>
+                        <td class="posicion gAS" id="terceroAPtsS">0</td>
+                        <td class="posicion gAS" id="terceroAPjS">0</td>
+                        <td class="posicion gAS" id="terceroAGfS">0</td>
+                        <td class="posicion gAS" id="terceroAGcS">0</td>
+                        <td class="posicion gAS" id="terceroADifS">0</td>
                     </tr>
                     <tr>
-                        <td>1</td>
-                        <td class="paises"><img src="/IMG/paisesbajos.gif" alt=""> Holanda</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td class="paises"> <img src="/IMG/senegal.gif" alt=""> Senegal</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
+                        <td>4</td>
+                        <td class="posicion gAS" id="pais"> <img src="/IMG/senegal.gif" alt=""> Senegal</td>
+                        <td class="posicion gAS" id="cuartoAPtsS">0</td>
+                        <td class="posicion gAS" id="cuartoAPjS">0</td>
+                        <td class="posicion gAS" id="cuartoAGfS">0</td>
+                        <td class="posicion gAS" id="cuartoAGcS">0</td>
+                        <td class="posicion gAS" id="cuartoADifS">0</td>
                     </tr>
                 </table>
 
+            </div>
+
+            <div class="contSubmit">
+                <button class="button" id="enviarGA"> <span>Guardar Predicciones</span></button>
+                <p class="pp gA" id="ptga"></p>
             </div>
 
             <h4>Resultados Reales</h4>
@@ -191,26 +195,26 @@
                         <div class="local">
                             <img src="/IMG/qatar.gif" alt="bandera Qatar">
                             <p>QAT</p>
-                            <input class="resultados" type="text" disabled>
+                            <input class="resultados" value="1" id="qp1r" type="text" disabled>
                         </div>
-                        <div class="visitante">    
-                            <input class="resultados" type="text" disabled>
+                        <div class="visitante">
+                            <input class="resultados" value="1"  id="ep1r" type="text" disabled>
                             <p>ECU</p>
                             <img src="/IMG/ecuador.gif" alt="bandera ecuador">
-                            
-                        </div>    
+
+                        </div>
                     </div>
                     <div class="partido2">
                         <div class="local">
                             <img src="/IMG/senegal.gif" alt="bandera Senegal">
                             <p>SEN</p>
-                            <input class="resultados" type="text" disabled>
+                            <input class="resultados" value="2"   id="sp1r" type="text" disabled>
                         </div>
-                        <div class="visitante">    
-                            <input class="resultados" type="text" disabled>
+                        <div class="visitante">
+                            <input class="resultados"  value="0"  id="hp1r" type="text" disabled>
                             <p>HOL</p>
                             <img src="/IMG/paisesbajos.gif" alt="bandera Holanda">
-                        </div>    
+                        </div>
                     </div>
                 </div>
 
@@ -220,25 +224,25 @@
                         <div class="local">
                             <img src="/IMG/qatar.gif" alt="bandera Qatar">
                             <p>QAT</p>
-                            <input class="resultados" type="text" disabled>
+                            <input class="resultados" value="1" id="qp2r" type="text" disabled>
                         </div>
-                        <div class="visitante">    
-                            <input class="resultados" type="text" disabled>
+                        <div class="visitante">
+                            <input class="resultados" value="2" id="sp2r" type="text" disabled>
                             <p>SEN</p>
                             <img src="/IMG/senegal.gif" alt="bandera ecuador">
-                        </div>    
+                        </div>
                     </div>
                     <div class="partido2">
                         <div class="local">
                             <img src="/IMG/paisesbajos.gif" alt="bandera Senegal">
                             <p>HOL</p>
-                            <input class="resultados" type="text" disabled>
+                            <input class="resultados" value="2" id="hp2r" type="text" disabled>
                         </div>
-                        <div class="visitante">    
-                            <input class="resultados" type="text" disabled>
+                        <div class="visitante">
+                            <input class="resultados" value="1" id="ep2r" type="text" disabled>
                             <p>ECU</p>
                             <img src="/IMG/ecuador.gif" alt="bandera Holanda">
-                        </div>    
+                        </div>
                     </div>
                 </div>
 
@@ -248,25 +252,1229 @@
                         <div class="local">
                             <img src="/IMG/paisesbajos.gif" alt="bandera Qatar">
                             <p>HOL</p>
-                            <input class="resultados" type="text" disabled>
+                            <input class="resultados" value="1" id="hp3r" type="text" disabled>
                         </div>
-                        <div class="visitante">    
-                            <input class="resultados" type="text" disabled>
+                        <div class="visitante">
+                            <input class="resultados" value="1" id="qp3r" type="text" disabled>
                             <p>QAT</p>
                             <img src="/IMG/qatar.gif" alt="bandera ecuador">
-                        </div>    
+                        </div>
                     </div>
                     <div class="partido2">
                         <div class="local">
                             <img src="/IMG/ecuador.gif" alt="bandera Senegal">
                             <p>ECU</p>
-                            <input class="resultados" type="text" disabled>
+                            <input class="resultados"  id="ep3r" type="text" disabled>
                         </div>
-                        <div class="visitante">    
-                            <input class="resultados" type="text" disabled>
+                        <div class="visitante">
+                            <input class="resultados" id="sp3r" type="text" disabled>
                             <p>SEN</p>
                             <img src="/IMG/senegal.gif" alt="bandera Holanda">
-                        </div>    
+                        </div>
+                    </div>
+                </div>
+
+                <table id="gAR">
+                    <tr>
+                        <td>POS</td>
+                        <td>Pais</td>
+                        <td>Pts</td>
+                        <td>Pj</td>
+                        <td>Gf</td>
+                        <td>Gc</td>
+                        <td>Dif</td>
+                    </tr>
+                    <tr class="primero">
+                        <td>1</td>
+                        <td class="posicion gA" id="pais"> <img src="/IMG/qatar.gif" alt=""> Qatar</td>
+                        <td class="posicion gA pts" id="primeroAPts">0</td>
+                        <td class="posicion gA pj" id="primeroAPj">0</td>
+                        <td class="posicion gA gf" id="primeroAGf">0</td>
+                        <td class="posicion gA gc" id="primeroAGc">0</td>
+                        <td class="posicion gA dif" id="primeroADif">0</td>
+                    </tr>
+                    <tr class="segundo">
+                        <td>2</td>
+                        <td class="posicion gA" id="pais"> <img src="/IMG/ecuador.gif" alt=""> Ecuador</td>
+                        <td class="posicion gA" id="segundoAPts">0</td>
+                        <td class="posicion gA" id="segundoAPj">0</td>
+                        <td class="posicion gA" id="segundoAGf">0</td>
+                        <td class="posicion gA" id="segundoAGc">0</td>
+                        <td class="posicion gA" id="segundoADif">0</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="posicion gA" id="pais"> <img src="/IMG/paisesbajos.gif" alt=""> Holanda</td>
+                        <td class="posicion gA" id="terceroAPts">0</td>
+                        <td class="posicion gA" id="terceroAPj">0</td>
+                        <td class="posicion gA" id="terceroAGf">0</td>
+                        <td class="posicion gA" id="terceroAGc">0</td>
+                        <td class="posicion gA" id="terceroADif">0</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="posicion gA" id="pais"> <img src="/IMG/senegal.gif" alt=""> Senegal</td>
+                        <td class="posicion gA" id="cuartoAPts">0</td>
+                        <td class="posicion gA" id="cuartoAPj">0</td>
+                        <td class="posicion gA" id="cuartoAGf">0</td>
+                        <td class="posicion gA" id="cuartoAGc">0</td>
+                        <td class="posicion gA" id="cuartoADif">0</td>
+                    </tr>
+                </table>
+
+                <h4>Puntos Obtenidos en este grupo</h4>
+                <p class="pp gA" id="puntosGA">30</p>
+
+            </div>
+
+
+        </section>
+
+
+        <section id="grupoB" class="grupo B">
+            <h3>grupo B</h3>
+            <h4>Tus predicciones</h4>
+            <div class="contPredicciones">
+
+                <div class="fecha1">
+                    <h5>Fecha 1</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/inglaterra.gif" alt="bandera Qatar">
+                            <p>ING</p>
+                            <input class="resultados" value="2" type="text" id="ip1s">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" value="0" type="text" id="irp1s">
+                            <p>IRA</p>
+                            <img src="/IMG/iran.gif" alt="bandera ecuador">
+                            <p class="pp gB" id="pp1sB"></p>
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/usa.gif" alt="bandera usa">
+                            <p>USA</p>
+                            <input class="resultados" value="1" type="text" id="up1s">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" value="2" type="text" id="gp1s">
+                            <p>GAL</p>
+                            <img src="/IMG/gales.gif" alt="bandera Holanda">
+                            <p class="pp gB" id="pp2sB"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fecha2">
+                    <h5>Fecha 2</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/gales.gif" alt="bandera Qatar">
+                            <p>GAL</p>
+                            <input class="resultados" value="1" type="text" id="gp2s">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" value="0" type="text" id="irp2s">
+                            <p>IRA</p>
+                            <img src="/IMG/iran.gif" alt="bandera ecuador">
+                            <p class="pp gB" id="pp3sB"></p>
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/inglaterra.gif" alt="bandera Senegal">
+                            <p>ING</p>
+                            <input class="resultados" value="2" type="text" id="ip2s">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" value="0" type="text" id="up2s">
+                            <p>USA</p>
+                            <img src="/IMG/usa.gif" alt="bandera Holanda">
+                            <p class="pp gB" id="pp4sB"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fecha3">
+                    <h5>Fecha 3</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/gales.gif" alt="bandera Qatar">
+                            <p>GAL</p>
+                            <input class="resultados" value="1" type="text" id="gp3s">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" value="1" type="text" id="ip3s">
+                            <p>ING</p>
+                            <img src="/IMG/inglaterra.gif" alt="bandera ecuador">
+                            <p class="pp gB" id="pp5sB"></p>
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/iran.gif" alt="bandera Senegal">
+                            <p>IRA</p>
+                            <input class="resultados" value="1" type="text" id="irp3s">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" value="2" type="text" id="up3s">
+                            <p>USA</p>
+                            <img src="/IMG/usa.gif" alt="bandera Holanda">
+                            <p class="pp gB" id="pp6sB"></p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <table>
+                    <tr>
+                        <td>POS</td>
+                        <td>Pais</td>
+                        <td>Pts</td>
+                        <td>Pj</td>
+                        <td>Gf</td>
+                        <td>Gc</td>
+                        <td>Dif</td>
+                    </tr>
+                    <tr class="primero">
+                        <td>1</td>
+                        <td class="posicion gBS" id="pais"> <img src="/IMG/inglaterra.gif" alt=""> inglaterra</td>
+                        <td class="posicion gBS" id="primeroBPtsS">0</td>
+                        <td class="posicion gBS" id="primeroBPjS">0</td>
+                        <td class="posicion gBS" id="primeroBGfS">0</td>
+                        <td class="posicion gBS" id="primeroBGcS">0</td>
+                        <td class="posicion gBS" id="primeroBDifS">0</td>
+                    </tr>
+                    <tr class="segundo">
+                        <td>2</td>
+                        <td class="posicion gBS" id="pais"> <img src="/IMG/iran.gif" alt=""> Iran</td>
+                        <td class="posicion gBS" id="segundoBPtsS">0</td>
+                        <td class="posicion gBS" id="segundoBPjS">0</td>
+                        <td class="posicion gBS" id="segundoBGfS">0</td>
+                        <td class="posicion gBS" id="segundoBGcS">0</td>
+                        <td class="posicion gBS" id="segundoBDifS">0</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="posicion gBS" id="pais"> <img src="/IMG/usa.gif" alt=""> USA</td>
+                        <td class="posicion gBS" id="terceroBPtsS">0</td>
+                        <td class="posicion gBS" id="terceroBPjS">0</td>
+                        <td class="posicion gBS" id="terceroBGfS">0</td>
+                        <td class="posicion gBS" id="terceroBGcS">0</td>
+                        <td class="posicion gBS" id="terceroBDifS">0</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="posicion gBS" id="pais"> <img src="/IMG/gales.gif" alt=""> Gales</td>
+                        <td class="posicion gBS" id="cuartoBPtsS">0</td>
+                        <td class="posicion gBS" id="cuartoBPjS">0</td>
+                        <td class="posicion gBS" id="cuartoBGfS">0</td>
+                        <td class="posicion gBS" id="cuartoBGcS">0</td>
+                        <td class="posicion gBS" id="cuartoBDifS">0</td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <div class="contSubmit">
+                <button class="button" id="enviarGB"> <span>Guardar Predicciones</span></button>
+                <p class="pp gB" id="ptgb"></p>
+            </div>
+
+            <h4>Resultados Reales</h4>
+            <div class="contReal">
+
+                <div class="fecha1">
+                    <h5>Fecha 1</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <img src="/IMG/inglaterra.gif" alt="bandera Qatar">
+                            <p>ING</p>
+                            <input class="resultados" value="1" type="text" id="ip1r" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" value="2" type="text" id="irp1r" disabled>
+                            <p>IRA</p>
+                            <img src="/IMG/iran.gif" alt="bandera ecuador">
+
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <img src="/IMG/usa.gif" alt="bandera Senegal">
+                            <p>USA</p>
+                            <input class="resultados" value="0" type="text" id="up1r" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" value="0" type="text" id="gp1r" disabled>
+                            <p>GAL</p>
+                            <img src="/IMG/gales.gif" alt="bandera Holanda">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fecha2">
+                    <h5>Fecha 2</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <img src="/IMG/gales.gif" alt="bandera Qatar">
+                            <p>GAL</p>
+                            <input class="resultados" value="2" type="text" id="gp2r" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" value="1" type="text" id="irp2r" disabled>
+                            <p>IRA</p>
+                            <img src="/IMG/iran.gif" alt="bandera ecuador">
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <img src="/IMG/inglaterra.gif" alt="bandera Senegal">
+                            <p>ING</p>
+                            <input class="resultados" value="3" type="text" id="ip2r" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" value="0" type="text" id="up2r" disabled>
+                            <p>USA</p>
+                            <img src="/IMG/usa.gif" alt="bandera Holanda">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fecha3">
+                    <h5>Fecha 3</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <img src="/IMG/gales.gif" alt="bandera Qatar">
+                            <p>GAL</p>
+                            <input class="resultados" type="text" id="gp3r" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text" id="ip3r" disabled>
+                            <p>ING</p>
+                            <img src="/IMG/inglaterra.gif" alt="bandera ecuador">
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <img src="/IMG/iran.gif" alt="bandera Senegal">
+                            <p>IRA</p>
+                            <input class="resultados" type="text" id="irp3r" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text" id="up3r" disabled>
+                            <p>USA</p>
+                            <img src="/IMG/usa.gif" alt="bandera Holanda">
+                        </div>
+                    </div>
+                </div>
+
+                <table>
+                    <tr>
+                        <td>POS</td>
+                        <td>Pais</td>
+                        <td>Pts</td>
+                        <td>Pj</td>
+                        <td>Gf</td>
+                        <td>Gc</td>
+                        <td>Dif</td>
+                    </tr>
+                    <tr class="primero">
+                        <td>1</td>
+                        <td class="posicion gB" id="pais">0</td>
+                        <td class="posicion gB" id="primeroB"> <img src="/IMG/inglaterra.gif" alt=""> inglaterra</td>
+                        <td class="posicion gB" id="primeroBPj">0</td>
+                        <td class="posicion gB" id="primeroBGf">0</td>
+                        <td class="posicion gB" id="primeroBGc">0</td>
+                        <td class="posicion gB" id="primeroBDif">0</td>
+                    </tr>
+                    <tr class="segundo">
+                        <td>2</td>
+                        <td class="posicion gB" id="pais"> <img src="/IMG/Iran.gif" alt=""> Iran</td>
+                        <td class="posicion gB" id="segundoBPts">0</td>
+                        <td class="posicion gB" id="segundoBPj">0</td>
+                        <td class="posicion gB" id="segundoBGf">0</td>
+                        <td class="posicion gB" id="segundoBGc">0</td>
+                        <td class="posicion gB" id="segundoBDif">0</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="posicion gB" id="pais"> <img src="/IMG/usa.gif" alt=""> USA</td>
+                        <td class="posicion gB" id="terceroBPts">0</td>
+                        <td class="posicion gB" id="terceroBPj">0</td>
+                        <td class="posicion gB" id="terceroBGf">0</td>
+                        <td class="posicion gB" id="terceroBGc">0</td>
+                        <td class="posicion gB" id="terceroBDif">0</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="posicion gB" id="pais"> <img src="/IMG/gales.gif" alt=""> Gales</td>
+                        <td class="posicion gB" id="cuartoBPts">0</td>
+                        <td class="posicion gB" id="cuartoBPj">0</td>
+                        <td class="posicion gB" id="cuartoBGf">0</td>
+                        <td class="posicion gB" id="cuartoBGc">0</td>
+                        <td class="posicion gB" id="cuartoBDif">0</td>
+                    </tr>
+                </table>
+
+
+                <h4>Puntos Obtenidos en este grupo</h4>
+                <p class="pp gB" id="puntosGA">30</p>
+
+            </div>
+
+
+        </section>
+
+
+        <section id="grupoC" class="grupo C">
+            <h3>grupo C</h3>
+            <h4>Tus predicciones</h4>
+            <div class="contPredicciones">
+
+                <div class="fecha1">
+                    <h5>Fecha 1</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/argentina.gif" alt="bandera Qatar">
+                            <p>ARG</p>
+                            <input class="resultados" value="2" type="text" id="ap1s">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" value="0" type="text" id="asp1s">
+                            <p>ARA</p>
+                            <img src="/IMG/arabiasaudita.gif" alt="bandera ecuador">
+                            <p class="pp gC" id="pp1sC">0</p>
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/mexico.gif" alt="bandera Senegal">
+                            <p>MEX</p>
+                            <input class="resultados" value="1" type="text" id="mp1s">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" value="0" type="text" id="polp1s">
+                            <p>POL</p>
+                            <img src="/IMG/polonia.gif" alt="bandera Holanda">
+                            <p class="pp gC" id="pp2sC">0</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fecha2">
+                    <h5>Fecha 2</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/polonia.gif" alt="bandera Qatar">
+                            <p>POL</p>
+                            <input class="resultados" value="2" type="text" id="polp2s">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" value="1" type="text" id="asp2s">
+                            <p>ARA</p>
+                            <img src="/IMG/arabiasaudita.gif" alt="bandera ecuador">
+                            <p class="pp gC" id="pp3sC">0</p>
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/argentina.gif" alt="bandera Senegal">
+                            <p>ARG</p>
+                            <input class="resultados" value="2" type="text" id="ap2s">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" value="1" type="text" id="mp2s">
+                            <p>MEX</p>
+                            <img src="/IMG/mexico.gif" alt="bandera Holanda">
+                            <p class="pp gC" id="pp4sC">0</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fecha3">
+                    <h5>Fecha 3</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/polonia.gif" alt="bandera Qatar">
+                            <p>POL</p>
+                            <input class="resultados" value="1" type="text" id="polp3s">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" value="2" type="text" id="ap3s">
+                            <p>ARG</p>
+                            <img src="/IMG/argentina.gif" alt="bandera ecuador">
+                            <p class="pp gC" id="pp5sC">0</p>
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/arabiasaudita.gif" alt="bandera Senegal">
+                            <p>ARA</p>
+                            <input class="resultados" value="1" type="text" id="asp3s">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" value="1" type="text" id="mp3s">
+                            <p>MEX</p>
+                            <img src="/IMG/mexico.gif" alt="bandera Holanda">
+                            <p class="pp gC" id="pp6sC">0</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <table>
+                    <tr>
+                        <td>POS</td>
+                        <td>Pais</td>
+                        <td>Pts</td>
+                        <td>Pj</td>
+                        <td>Gf</td>
+                        <td>Gc</td>
+                        <td>Dif</td>
+                    </tr>
+                    <tr class="primero">
+                        <td>1</td>
+                        <td class="posicion gCS" id="pais"> <img src="/IMG/argentina.gif" alt=""> Argentina</td>
+                        <td class="posicion gCS" id="primeroCPtsS">0</td>
+                        <td class="posicion gCS" id="primeroCPjS">0</td>
+                        <td class="posicion gCS" id="primeroCGfS">0</td>
+                        <td class="posicion gCS" id="primeroCGcS">0</td>
+                        <td class="posicion gCS" id="primeroCDifS">0</td>
+                    </tr>
+                    <tr class="segundo">
+                        <td>2</td>
+                        <td class="posicion gCS" id="pais"> <img src="/IMG/arabiasaudita.gif" alt=""> Arabia</td>
+                        <td class="posicion gCS" id="segundoCPtsS">0</td>
+                        <td class="posicion gCS" id="segundoCPjS">0</td>
+                        <td class="posicion gCS" id="segundoCGfS">0</td>
+                        <td class="posicion gCS" id="segundoCGcS">0</td>
+                        <td class="posicion gCS" id="segundoCDifS">0</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="posicion gCS" id="pais"> <img src="/IMG/mexico.gif" alt=""> Mexico</td>
+                        <td class="posicion gCS" id="terceroCPtsS">0</td>
+                        <td class="posicion gCS" id="terceroCPjS">0</td>
+                        <td class="posicion gCS" id="terceroCGfS">0</td>
+                        <td class="posicion gCS" id="terceroCGcS">0</td>
+                        <td class="posicion gCS" id="terceroCDifS">0</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="posicion gCS" id="pais"> <img src="/IMG/polonia.gif" alt=""> Polonia</td>
+                        <td class="posicion gCS" id="cuartoCPtsS">0</td>
+                        <td class="posicion gCS" id="cuartoCPjS">0</td>
+                        <td class="posicion gCS" id="cuartoCGfS">0</td>
+                        <td class="posicion gCS" id="cuartoCGcS">0</td>
+                        <td class="posicion gCS" id="cuartoCDifS">0</td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <div class="contSubmit">
+                <button class="button" id="enviarGC"> <span>Guardar Predicciones</span></button>
+                <p class="pp gC" id="ptgc"></p>
+            </div>
+
+            <h4>Resultados Reales</h4>
+            <div class="contReal">
+
+                <div class="fecha1">
+                    <h5>Fecha 1</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <img src="/IMG/argentina.gif" alt="bandera Qatar">
+                            <p>ARG</p>
+                            <input class="resultados" value="3" id="ap1r" type="text" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" value="0" id="asp1r" type="text" disabled>
+                            <p>ARA</p>
+                            <img src="/IMG/arabiasaudita.gif" alt="bandera ecuador">
+
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <img src="/IMG/mexico.gif" alt="bandera Senegal">
+                            <p>MEX</p>
+                            <input class="resultados" value="1" id="mp1r" type="text" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" value="1" id="pp1r" type="text" disabled>
+                            <p>POL</p>
+                            <img src="/IMG/polonia.gif" alt="bandera Holanda">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fecha2">
+                    <h5>Fecha 2</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <img src="/IMG/polonia.gif" alt="bandera Qatar">
+                            <p>POL</p>
+                            <input class="resultados" value="1" id="pp2r" type="text" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" value="0" id="asp2r" type="text" disabled>
+                            <p>ARA</p>
+                            <img src="/IMG/arabiasaudita.gif" alt="bandera ecuador">
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <img src="/IMG/argentina.gif" alt="bandera Senegal">
+                            <p>ARG</p>
+                            <input class="resultados" value="1" id="ap2r" type="text" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" value="0" id="mp2r" type="text" disabled>
+                            <p>MEX</p>
+                            <img src="/IMG/mexico.gif" alt="bandera Holanda">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fecha3">
+                    <h5>Fecha 3</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <img src="/IMG/polonia.gif" alt="bandera Qatar">
+                            <p>POL</p>
+                            <input class="resultados" id="pp3r" type="text" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" id="ap3r" type="text" disabled>
+                            <p>ARG</p>
+                            <img src="/IMG/argentina.gif" alt="bandera ecuador">
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <img src="/IMG/arabiasaudita.gif" alt="bandera Senegal">
+                            <p>ARA</p>
+                            <input class="resultados" id="asp3r" type="text" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" id="mp3r" type="text" disabled>
+                            <p>MEX</p>
+                            <img src="/IMG/mexico.gif" alt="bandera Holanda">
+                        </div>
+                    </div>
+                </div>
+
+                <table>
+                    <tr>
+                        <td>POS</td>
+                        <td>Pais</td>
+                        <td>Pts</td>
+                        <td>Pj</td>
+                        <td>Gf</td>
+                        <td>Gc</td>
+                        <td>Dif</td>
+                    </tr>
+                    <tr class="primero">
+                        <td>1</td>
+                        <td class="posicion gC" id="pais"> <img src="/IMG/argentina.gif" alt=""> Argentina</td>
+                        <td class="posicion gC" id="primeroCPts">0</td>
+                        <td class="posicion gC" id="primeroCPj">0</td>
+                        <td class="posicion gC" id="primeroCGf">0</td>
+                        <td class="posicion gC" id="primeroCGc">0</td>
+                        <td class="posicion gC" id="primeroCDif">0</td>
+                    </tr>
+                    <tr class="segundo">
+                        <td>2</td>
+                        <td class="posicion gC" id="pais"> <img src="/IMG/arabiasaudita.gif" alt=""> Arabia Saudita</td>
+                        <td class="posicion gC" id="segundoCPts">0</td>
+                        <td class="posicion gC" id="segundoCPj">0</td>
+                        <td class="posicion gC" id="segundoCGf">0</td>
+                        <td class="posicion gC" id="segundoCGc">0</td>
+                        <td class="posicion gC" id="segundoCDif">0</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="posicion gC" id="pais"> <img src="/IMG/mexico.gif" alt=""> Mexico</td>
+                        <td class="posicion gC" id="terceroCPts">0</td>
+                        <td class="posicion gC" id="terceroCPj">0</td>
+                        <td class="posicion gC" id="terceroCGf">0</td>
+                        <td class="posicion gC" id="terceroCGc">0</td>
+                        <td class="posicion gC" id="terceroCDif">0</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="posicion gC" id="pais"> <img src="/IMG/polonia.gif" alt=""> Polonia</td>
+                        <td class="posicion gC" id="cuartoCPts">0</td>
+                        <td class="posicion gC" id="cuartoCPj">0</td>
+                        <td class="posicion gC" id="cuartoCGf">0</td>
+                        <td class="posicion gC" id="cuartoCGc">0</td>
+                        <td class="posicion gC" id="cuartoCDif">0</td>
+                    </tr>
+                </table>
+
+                <h4>Puntos Obtenidos en este grupo</h4>
+                <p class="pp gC" id="puntosGA">30</p>
+
+            </div>
+        </section>
+
+
+        <section id="grupoD" class="grupo D">
+            <h3>grupo D</h3>
+            <h4>Tus predicciones</h4>
+            <div class="contPredicciones">
+
+                <div class="fecha1">
+                    <h5>Fecha 1</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/dinamarca.gif" alt="bandera Qatar">
+                            <p>DIN</p>
+                            <input class="resultados" value="1" id="dp1s" type="text">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" value="0" id="tp1s" type="text">
+                            <p>TUN</p>
+                            <img src="/IMG/tunez.gif" alt="bandera ecuador">
+                            <p class="pp gD">2</p>
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/francia.gif" alt="bandera Senegal">
+                            <p>FRA</p>
+                            <input class="resultados" value="3" id="fp1s" type="text">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" value="0" id="aup1s" type="text">
+                            <p>AUS</p>
+                            <img src="/IMG/australia.gif" alt="bandera Holanda">
+                            <p class="pp gD">2</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fecha2">
+                    <h5>Fecha 2</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/tunez.gif" alt="bandera Qatar">
+                            <p>TUN</p>
+                            <input class="resultados" value="0" id="tp2s" type="text">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" value="0" id="aup2s" type="text">
+                            <p>AUS</p>
+                            <img src="/IMG/australia.gif" alt="bandera ecuador">
+                            <p class="pp gD">2</p>
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/francia.gif" alt="bandera Senegal">
+                            <p>FRA</p>
+                            <input class="resultados" value="2" id="fp2s" type="text">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" value="0" id="dp2s" type="text">
+                            <p>DIN</p>
+                            <img src="/IMG/dinamarca.gif" alt="bandera Holanda">
+                            <p class="pp gD">2</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fecha3">
+                    <h5>Fecha 3</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/tunez.gif" alt="bandera Qatar">
+                            <p>TUN</p>
+                            <input class="resultados" value="0" id="tp3s" type="text">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" value="3" id="fp3s" type="text">
+                            <p>FRA</p>
+                            <img src="/IMG/francia.gif" alt="bandera ecuador">
+                            <p class="pp gD">2</p>
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/australia.gif" alt="bandera Senegal">
+                            <p>AUS</p>
+                            <input class="resultados" value="0" id="aup3s" type="text">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" value="0" id="dp3s" type="text">
+                            <p>DIN</p>
+                            <img src="/IMG/dinamarca.gif" alt="bandera Holanda">
+                            <p class="pp gD">2</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <table>
+                    <tr>
+                        <td>POS</td>
+                        <td>Pais</td>
+                        <td>Pts</td>
+                        <td>Pj</td>
+                        <td>Gf</td>
+                        <td>Gc</td>
+                        <td>Dif</td>
+                    </tr>
+                    <tr class="primero">
+                        <td>1</td>
+                        <td class="posicion gDS" id="pais"> <img src="/IMG/francia.gif" alt=""> Francia</td>
+                        <td class="posicion gDS" id="primeroDPtsS">0</td>
+                        <td class="posicion gDS" id="primeroDPjS">0</td>
+                        <td class="posicion gDS" id="primeroDGfS">0</td>
+                        <td class="posicion gDS" id="primeroDGcS">0</td>
+                        <td class="posicion gDS" id="primeroDDifS">0</td>
+                    </tr>
+                    <tr class="segundo">
+                        <td>2</td>
+                        <td class="posicion gDS" id="pais"> <img src="/IMG/australia.gif" alt=""> Australia</td>
+                        <td class="posicion gDS" id="segundoDPtsS">0</td>
+                        <td class="posicion gDS" id="segundoDPjS">0</td>
+                        <td class="posicion gDS" id="segundoDGfS">0</td>
+                        <td class="posicion gDS" id="segundoDGcS">0</td>
+                        <td class="posicion gDS" id="segundoDDifS">0</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="posicion gDS" id="pais"> <img src="/IMG/dinamarca.gif" alt=""> Dinamarca</td>
+                        <td class="posicion gDS" id="terceroDPtsS">0</td>
+                        <td class="posicion gDS" id="terceroDPjS">0</td>
+                        <td class="posicion gDS" id="terceroDGfS">0</td>
+                        <td class="posicion gDS" id="terceroDGcS">0</td>
+                        <td class="posicion gDS" id="terceroDDifS">0</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="posicion gDS" id="pais"> <img src="/IMG/tunez.gif" alt=""> Tunez</td>
+                        <td class="posicion gDS" id="cuartoDPtsS">0</td>
+                        <td class="posicion gDS" id="cuartoDPjS">0</td>
+                        <td class="posicion gDS" id="cuartoDGfS">0</td>
+                        <td class="posicion gDS" id="cuartoDGcS">0</td>
+                        <td class="posicion gDS" id="cuartoDDifS">0</td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <div class="contSubmit">
+                <button class="button" id="enviarGD"> <span>Guardar Predicciones</span></button>
+                <p class="pp gD">10</p>
+            </div>
+
+            <h4>Resultados Reales</h4>
+            <div class="contReal">
+
+                <div class="fecha1">
+                    <h5>Fecha 1</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <img src="/IMG/dinamarca.gif" alt="bandera Qatar">
+                            <p>DIN</p>
+                            <input class="resultados" value="1" id="dp1r" type="text" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" value="0" id="tp1r" type="text" disabled>
+                            <p>TUN</p>
+                            <img src="/IMG/tunez.gif" alt="bandera ecuador">
+
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <img src="/IMG/francia.gif" alt="bandera Senegal">
+                            <p>FRA</p>
+                            <input class="resultados" value="2" id="fp1r" type="text" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" value="0" id="aup1r" type="text" disabled>
+                            <p>AUS</p>
+                            <img src="/IMG/australia.gif" alt="bandera Holanda">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fecha2">
+                    <h5>Fecha 2</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <img src="/IMG/tunez.gif" alt="bandera Qatar">
+                            <p>TUN</p>
+                            <input class="resultados" value="0" id="tp2r" type="text" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" value="2" id="aup2r" type="text" disabled>
+                            <p>AUS</p>
+                            <img src="/IMG/australia.gif" alt="bandera ecuador">
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <img src="/IMG/francia.gif" alt="bandera Senegal">
+                            <p>FRA</p>
+                            <input class="resultados" value="2" id="fp2r" type="text" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" value="1" id="dp2r" type="text" disabled>
+                            <p>DIN</p>
+                            <img src="/IMG/dinamarca.gif" alt="bandera Holanda">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fecha3">
+                    <h5>Fecha 3</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <img src="/IMG/tunez.gif" alt="bandera Qatar">
+                            <p>TUN</p>
+                            <input class="resultados" value="0" id="tp3r" type="text" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" value="2" id="fp3r" type="text" disabled>
+                            <p>FRA</p>
+                            <img src="/IMG/francia.gif" alt="bandera ecuador">
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <img src="/IMG/australia.gif" alt="bandera Senegal">
+                            <p>AUS</p>
+                            <input class="resultados" value="2" id="aup3r" type="text" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" value="0" id="dp3r" type="text" disabled>
+                            <p>DIN</p>
+                            <img src="/IMG/dinamarca.gif" alt="bandera Holanda">
+                        </div>
+                    </div>
+                </div>
+
+                <table>
+                    <tr>
+                        <td>POS</td>
+                        <td>Pais</td>
+                        <td>Pts</td>
+                        <td>Pj</td>
+                        <td>Gf</td>
+                        <td>Gc</td>
+                        <td>Dif</td>
+                        <tr class="primero">
+                            <td>1</td>
+                            <td class="posicion gD" id="pais"> <img src="/IMG/francia.gif" alt=""> Francia</td>
+                            <td class="posicion gD" id="primeroDPts">0</td>
+                            <td class="posicion gD" id="primeroDPj">0</td>
+                            <td class="posicion gD" id="primeroDGf">0</td>
+                            <td class="posicion gD" id="primeroDGc">0</td>
+                            <td class="posicion gD" id="primeroDDif">0</td>
+                        </tr>
+                        <tr class="segundo">
+                            <td>2</td>
+                            <td class="posicion gD" id="pais"> <img src="/IMG/australia.gif" alt=""> Australia</td>
+                            <td class="posicion gD" id="segundoDPts">0</td>
+                            <td class="posicion gD" id="segundoDPj">0</td>
+                            <td class="posicion gD" id="segundoDGf">0</td>
+                            <td class="posicion gD" id="segundoDGc">0</td>
+                            <td class="posicion gD" id="segundoDDif">0</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td class="posicion gD" id="pais"> <img src="/IMG/dinamarca.gif" alt=""> Dinamarca</td>
+                            <td class="posicion gD" id="terceroDPts">0</td>
+                            <td class="posicion gD" id="terceroDPj">0</td>
+                            <td class="posicion gD" id="terceroDGf">0</td>
+                            <td class="posicion gD" id="terceroDGc">0</td>
+                            <td class="posicion gD" id="terceroDDif">0</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td class="posicion gD" id="pais"> <img src="/IMG/tunez.gif" alt=""> Tunez</td>
+                            <td class="posicion gD" id="cuartoDPts">0</td>
+                            <td class="posicion gD" id="cuartoDPj">0</td>
+                            <td class="posicion gD" id="cuartoDGf">0</td>
+                            <td class="posicion gD" id="cuartoDGc">0</td>
+                            <td class="posicion gD" id="cuartoDDif">0</td>
+                        </tr>
+                </table>
+
+                <h4>Puntos Obtenidos en este grupo</h4>
+                <p class="pp gD" id="puntosGA">30</p>
+
+            </div>
+        </section>
+
+
+        <section id="grupoE" class="grupo E">
+            <h3>grupo E</h3>
+            <h4>Tus predicciones</h4>
+            <div class="contPredicciones">
+
+                <div class="fecha1">
+                    <h5>Fecha 1</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/alemania.gif" alt="bandera Qatar">
+                            <p>ALE</p>
+                            <input class="resultados" type="text">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text">
+                            <p>JPN</p>
+                            <img src="/IMG/JAPON.gif" alt="bandera ecuador">
+                            <p>2</p>
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/espana.gif" alt="bandera Senegal">
+                            <p>FRA</p>
+                            <input class="resultados" type="text">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text">
+                            <p>COS</p>
+                            <img src="/IMG/Costarica.gif" alt="bandera Holanda">
+                            <p>2</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fecha2">
+                    <h5>Fecha 2</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/JAPON.gif" alt="bandera Qatar">
+                            <p>JPN</p>
+                            <input class="resultados" type="text">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text">
+                            <p>COS</p>
+                            <img src="/IMG/Costarica.gif" alt="bandera ecuador">
+                            <p>2</p>
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/espana.gif" alt="bandera Senegal">
+                            <p>FRA</p>
+                            <input class="resultados" type="text">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text">
+                            <p>ALE</p>
+                            <img src="/IMG/alemania.gif" alt="bandera Holanda">
+                            <p>2</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fecha3">
+                    <h5>Fecha 3</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/JAPON.gif" alt="bandera Qatar">
+                            <p>JPN</p>
+                            <input class="resultados" type="text">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text">
+                            <p>FRA</p>
+                            <img src="/IMG/espana.gif" alt="bandera ecuador">
+                            <p>2</p>
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/Costarica.gif" alt="bandera Senegal">
+                            <p>COS</p>
+                            <input class="resultados" type="text">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text">
+                            <p>ALE</p>
+                            <img src="/IMG/alemania.gif" alt="bandera Holanda">
+                            <p>2</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <table>
+                    <tr>
+                        <td>POS</td>
+                        <td>Pais</td>
+                        <td>Pts</td>
+                        <td>Pj</td>
+                        <td>Gf</td>
+                        <td>Gc</td>
+                        <td>Dif</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="paises"> <img src="/IMG/espana.gif" alt=""> españa</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="paises"><img src="/IMG/Costarica.gif" alt=""> Costa rica</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="paises"><img src="/IMG/alemania.gif" alt=""> alemania</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="paises"> <img src="/IMG/JAPON.gif" alt=""> JAPON</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <div class="contSubmit">
+                <button class="button" id="enviar"> <span>Guardar Predicciones</span></button>
+                <p>10</p>
+            </div>
+
+            <h4>Resultados Reales</h4>
+            <div class="contReal">
+
+                <div class="fecha1">
+                    <h5>Fecha 1</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <img src="/IMG/alemania.gif" alt="bandera Qatar">
+                            <p>ALE</p>
+                            <input class="resultados" type="text" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text" disabled>
+                            <p>JPN</p>
+                            <img src="/IMG/JAPON.gif" alt="bandera ecuador">
+
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <img src="/IMG/espana.gif" alt="bandera Senegal">
+                            <p>FRA</p>
+                            <input class="resultados" type="text" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text" disabled>
+                            <p>COS</p>
+                            <img src="/IMG/Costarica.gif" alt="bandera Holanda">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fecha2">
+                    <h5>Fecha 2</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <img src="/IMG/JAPON.gif" alt="bandera Qatar">
+                            <p>JPN</p>
+                            <input class="resultados" type="text" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text" disabled>
+                            <p>COS</p>
+                            <img src="/IMG/Costarica.gif" alt="bandera ecuador">
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <img src="/IMG/espana.gif" alt="bandera Senegal">
+                            <p>FRA</p>
+                            <input class="resultados" type="text" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text" disabled>
+                            <p>ALE</p>
+                            <img src="/IMG/alemania.gif" alt="bandera Holanda">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fecha3">
+                    <h5>Fecha 3</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <img src="/IMG/JAPON.gif" alt="bandera Qatar">
+                            <p>JPN</p>
+                            <input class="resultados" type="text" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text" disabled>
+                            <p>FRA</p>
+                            <img src="/IMG/espana.gif" alt="bandera ecuador">
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <img src="/IMG/Costarica.gif" alt="bandera Senegal">
+                            <p>COS</p>
+                            <input class="resultados" type="text" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text" disabled>
+                            <p>ALE</p>
+                            <img src="/IMG/alemania.gif" alt="bandera Holanda">
+                        </div>
                     </div>
                 </div>
 
@@ -282,7 +1490,7 @@
                     </tr>
                     <tr>
                         <td>1</td>
-                        <td class="paises"> <img src="/IMG/qatar.gif" alt=""> Qatar</td>
+                        <td class="paises"> <img src="/IMG/espana.gif" alt=""> españa</td>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
@@ -291,7 +1499,7 @@
                     </tr>
                     <tr>
                         <td>1</td>
-                        <td class="paises"><img src="/IMG/ecuador.gif" alt=""> Ecuador</td>
+                        <td class="paises"><img src="/IMG/Costarica.gif" alt=""> Costa rica</td>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
@@ -300,7 +1508,7 @@
                     </tr>
                     <tr>
                         <td>1</td>
-                        <td class="paises"><img src="/IMG/paisesbajos.gif" alt=""> Holanda</td>
+                        <td class="paises"><img src="/IMG/alemania.gif" alt=""> alemania</td>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
@@ -309,7 +1517,7 @@
                     </tr>
                     <tr>
                         <td>1</td>
-                        <td class="paises"> <img src="/IMG/senegal.gif" alt=""> Senegal</td>
+                        <td class="paises"> <img src="/IMG/JAPON.gif" alt=""> JAPON</td>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>
@@ -322,45 +1530,917 @@
                 <p class="puntos">30</p>
 
             </div>
-            
-
         </section>
 
 
+        <section id="grupoF" class="grupo F">
+            <h3>grupo F</h3>
+            <h4>Tus predicciones</h4>
+            <div class="contPredicciones">
 
-        <section id="grupoB">
-            <h3>grupo b</h3>
+                <div class="fecha1">
+                    <h5>Fecha 1</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/marruecos.gif" alt="bandera Qatar">
+                            <p>MAR</p>
+                            <input class="resultados" type="text">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text">
+                            <p>CRO</p>
+                            <img src="/IMG/croacia.gif" alt="bandera ecuador">
+                            <p>2</p>
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/belgica.gif" alt="bandera Senegal">
+                            <p>BEL</p>
+                            <input class="resultados" type="text">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text">
+                            <p>CAN</p>
+                            <img src="/IMG/canada.gif" alt="bandera Holanda">
+                            <p>2</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fecha2">
+                    <h5>Fecha 2</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/belgica.gif" alt="bandera Qatar">
+                            <p>BEL</p>
+                            <input class="resultados" type="text">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text">
+                            <p>MAR</p>
+                            <img src="/IMG/marruecos.gif" alt="bandera ecuador">
+                            <p>2</p>
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/croacia.gif" alt="bandera Senegal">
+                            <p>CRO</p>
+                            <input class="resultados" type="text">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text">
+                            <p>CAN</p>
+                            <img src="/IMG/canada.gif" alt="bandera Holanda">
+                            <p>2</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fecha3">
+                    <h5>Fecha 3</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/croacia.gif" alt="bandera Qatar">
+                            <p>CRO</p>
+                            <input class="resultados" type="text">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text">
+                            <p>BEL</p>
+                            <img src="/IMG/belgica.gif" alt="bandera ecuador">
+                            <p>2</p>
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/canada.gif" alt="bandera Senegal">
+                            <p>CAN</p>
+                            <input class="resultados" type="text">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text">
+                            <p>MAR</p>
+                            <img src="/IMG/marruecos.gif" alt="bandera Holanda">
+                            <p>2</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <table>
+                    <tr>
+                        <td>POS</td>
+                        <td>Pais</td>
+                        <td>Pts</td>
+                        <td>Pj</td>
+                        <td>Gf</td>
+                        <td>Gc</td>
+                        <td>Dif</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="paises"> <img src="/IMG/belgica.gif" alt=""> belgica</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="paises"><img src="/IMG/canada.gif" alt=""> canada</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="paises"><img src="/IMG/marruecos.gif" alt=""> marruecos</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="paises"> <img src="/IMG/croacia.gif" alt=""> croacia</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <div class="contSubmit">
+                <button class="button" id="enviar"> <span>Guardar Predicciones</span></button>
+                <p>10</p>
+            </div>
+
+            <h4>Resultados Reales</h4>
+            <div class="contReal">
+
+                <div class="fecha1">
+                    <h5>Fecha 1</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <img src="/IMG/marruecos.gif" alt="bandera Qatar">
+                            <p>MAR</p>
+                            <input class="resultados" type="text" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text" disabled>
+                            <p>CRO</p>
+                            <img src="/IMG/croacia.gif" alt="bandera ecuador">
+
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <img src="/IMG/belgica.gif" alt="bandera Senegal">
+                            <p>BEL</p>
+                            <input class="resultados" type="text" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text" disabled>
+                            <p>CAN</p>
+                            <img src="/IMG/canada.gif" alt="bandera Holanda">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fecha2">
+                    <h5>Fecha 2</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <img src="/IMG/belgica.gif" alt="bandera Qatar">
+                            <p>BEL</p>
+                            <input class="resultados" type="text" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text" disabled>
+                            <p>MAR</p>
+                            <img src="/IMG/marruecos.gif" alt="bandera ecuador">
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <img src="/IMG/croacia.gif" alt="bandera Senegal">
+                            <p>CRO</p>
+                            <input class="resultados" type="text" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text" disabled>
+                            <p>CAN</p>
+                            <img src="/IMG/canada.gif" alt="bandera Holanda">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fecha3">
+                    <h5>Fecha 3</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <img src="/IMG/croacia.gif" alt="bandera Qatar">
+                            <p>CRO</p>
+                            <input class="resultados" type="text" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text" disabled>
+                            <p>BEL</p>
+                            <img src="/IMG/belgica.gif" alt="bandera ecuador">
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <img src="/IMG/canada.gif" alt="bandera Senegal">
+                            <p>CAN</p>
+                            <input class="resultados" type="text" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text" disabled>
+                            <p>MAR</p>
+                            <img src="/IMG/marruecos.gif" alt="bandera Holanda">
+                        </div>
+                    </div>
+                </div>
+
+                <table>
+                    <tr>
+                        <td>POS</td>
+                        <td>Pais</td>
+                        <td>Pts</td>
+                        <td>Pj</td>
+                        <td>Gf</td>
+                        <td>Gc</td>
+                        <td>Dif</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="paises"> <img src="/IMG/belgica.gif" alt=""> belgica</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="paises"><img src="/IMG/canada.gif" alt=""> canada</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="paises"><img src="/IMG/marruecos.gif" alt=""> marruecos</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="paises"> <img src="/IMG/croacia.gif" alt=""> croacia</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                </table>
+
+                <h4>Puntos Obtenidos en este grupo</h4>
+                <p class="puntos">30</p>
+
+            </div>
         </section>
-        <section id="grupoC">
-            <h3>grupo c</h3>
+
+
+        <section id="grupoG" class="grupo G">
+            <h3>grupo G</h3>
+            <h4>Tus predicciones</h4>
+            <div class="contPredicciones">
+
+                <div class="fecha1">
+                    <h5>Fecha 1</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/suiza.gif" alt="bandera Qatar">
+                            <p>SUI</p>
+                            <input class="resultados" type="text">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text">
+                            <p>CAM</p>
+                            <img src="/IMG/camerun.gif" alt="bandera ecuador">
+                            <p>2</p>
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/brasil.gif" alt="bandera Senegal">
+                            <p>BRA</p>
+                            <input class="resultados" type="text">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text">
+                            <p>SER</p>
+                            <img src="/IMG/serbia.gif" alt="bandera Holanda">
+                            <p>2</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fecha2">
+                    <h5>Fecha 2</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/camerun.gif" alt="bandera Qatar">
+                            <p>CAM</p>
+                            <input class="resultados" type="text">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text">
+                            <p>SER</p>
+                            <img src="/IMG/serbia.gif" alt="bandera ecuador">
+                            <p>2</p>
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/brasil.gif" alt="bandera Senegal">
+                            <p>BRA</p>
+                            <input class="resultados" type="text">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text">
+                            <p>SUI</p>
+                            <img src="/IMG/suiza.gif" alt="bandera Holanda">
+                            <p>2</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fecha3">
+                    <h5>Fecha 3</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/camerun.gif" alt="bandera Qatar">
+                            <p>CAM</p>
+                            <input class="resultados" type="text">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text">
+                            <p>BRA</p>
+                            <img src="/IMG/brasil.gif" alt="bandera ecuador">
+                            <p>2</p>
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/serbia.gif" alt="bandera Senegal">
+                            <p>SER</p>
+                            <input class="resultados" type="text">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text">
+                            <p>SUI</p>
+                            <img src="/IMG/suiza.gif" alt="bandera Holanda">
+                            <p>2</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <table>
+                    <tr>
+                        <td>POS</td>
+                        <td>Pais</td>
+                        <td>Pts</td>
+                        <td>Pj</td>
+                        <td>Gf</td>
+                        <td>Gc</td>
+                        <td>Dif</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="paises"> <img src="/IMG/brasil.gif" alt=""> brasil</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="paises"><img src="/IMG/serbia.gif" alt=""> serbia</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="paises"><img src="/IMG/suiza.gif" alt=""> suiza</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="paises"> <img src="/IMG/camerun.gif" alt=""> camerun</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <div class="contSubmit">
+                <button class="button" id="enviar"> <span>Guardar Predicciones</span></button>
+                <p>10</p>
+            </div>
+
+            <h4>Resultados Reales</h4>
+            <div class="contReal">
+
+                <div class="fecha1">
+                    <h5>Fecha 1</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <img src="/IMG/suiza.gif" alt="bandera Qatar">
+                            <p>SUI</p>
+                            <input class="resultados" type="text" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text" disabled>
+                            <p>CAM</p>
+                            <img src="/IMG/camerun.gif" alt="bandera ecuador">
+
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <img src="/IMG/brasil.gif" alt="bandera Senegal">
+                            <p>BRA</p>
+                            <input class="resultados" type="text" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text" disabled>
+                            <p>SER</p>
+                            <img src="/IMG/serbia.gif" alt="bandera Holanda">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fecha2">
+                    <h5>Fecha 2</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <img src="/IMG/camerun.gif" alt="bandera Qatar">
+                            <p>CAM</p>
+                            <input class="resultados" type="text" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text" disabled>
+                            <p>SER</p>
+                            <img src="/IMG/serbia.gif" alt="bandera ecuador">
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <img src="/IMG/brasil.gif" alt="bandera Senegal">
+                            <p>BRA</p>
+                            <input class="resultados" type="text" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text" disabled>
+                            <p>SUI</p>
+                            <img src="/IMG/suiza.gif" alt="bandera Holanda">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fecha3">
+                    <h5>Fecha 3</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <img src="/IMG/camerun.gif" alt="bandera Qatar">
+                            <p>CAM</p>
+                            <input class="resultados" type="text" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text" disabled>
+                            <p>BRA</p>
+                            <img src="/IMG/brasil.gif" alt="bandera ecuador">
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <img src="/IMG/serbia.gif" alt="bandera Senegal">
+                            <p>SER</p>
+                            <input class="resultados" type="text" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text" disabled>
+                            <p>SUI</p>
+                            <img src="/IMG/suiza.gif" alt="bandera Holanda">
+                        </div>
+                    </div>
+                </div>
+
+                <table>
+                    <tr>
+                        <td>POS</td>
+                        <td>Pais</td>
+                        <td>Pts</td>
+                        <td>Pj</td>
+                        <td>Gf</td>
+                        <td>Gc</td>
+                        <td>Dif</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="paises"> <img src="/IMG/brasil.gif" alt=""> brasil</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="paises"><img src="/IMG/serbia.gif" alt=""> serbia</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="paises"><img src="/IMG/suiza.gif" alt=""> suiza</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="paises"> <img src="/IMG/camerun.gif" alt=""> camerun</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                </table>
+
+                <h4>Puntos Obtenidos en este grupo</h4>
+                <p class="puntos">30</p>
+
+            </div>
         </section>
-        <section id="grupoD">
-            <h3>grupo d</h3>
+
+
+        <section id="grupoH" class="grupo H">
+            <h3>grupo H</h3>
+            <h4>Tus predicciones</h4>
+            <div class="contPredicciones">
+
+                <div class="fecha1">
+                    <h5>Fecha 1</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/uruguay.gif" alt="bandera Qatar">
+                            <p>URU</p>
+                            <input class="resultados" type="text">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text">
+                            <p>COR</p>
+                            <img src="/IMG/coreadelsur.gif" alt="bandera ecuador">
+                            <p>2</p>
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/portugal.gif" alt="bandera Senegal">
+                            <p>POR</p>
+                            <input class="resultados" type="text">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text">
+                            <p>GHA</p>
+                            <img src="/IMG/ghana.gif" alt="bandera Holanda">
+                            <p>2</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fecha2">
+                    <h5>Fecha 2</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/coreadelsur.gif" alt="bandera Qatar">
+                            <p>COR</p>
+                            <input class="resultados" type="text">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text">
+                            <p>GHA</p>
+                            <img src="/IMG/ghana.gif" alt="bandera ecuador">
+                            <p>2</p>
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/portugal.gif" alt="bandera Senegal">
+                            <p>POR</p>
+                            <input class="resultados" type="text">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text">
+                            <p>URU</p>
+                            <img src="/IMG/uruguay.gif" alt="bandera Holanda">
+                            <p>2</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fecha3">
+                    <h5>Fecha 3</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/coreadelsur.gif" alt="bandera Qatar">
+                            <p>COR</p>
+                            <input class="resultados" type="text">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text">
+                            <p>POR</p>
+                            <img src="/IMG/portugal.gif" alt="bandera ecuador">
+                            <p>2</p>
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <input type="checkbox" name="bonus" id="bonus">
+                            <img src="/IMG/ghana.gif" alt="bandera Senegal">
+                            <p>GHA</p>
+                            <input class="resultados" type="text">
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text">
+                            <p>URU</p>
+                            <img src="/IMG/uruguay.gif" alt="bandera Holanda">
+                            <p>2</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <table>
+                    <tr>
+                        <td>POS</td>
+                        <td>Pais</td>
+                        <td>Pts</td>
+                        <td>Pj</td>
+                        <td>Gf</td>
+                        <td>Gc</td>
+                        <td>Dif</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="paises"> <img src="/IMG/portugal.gif" alt=""> portugal</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="paises"><img src="/IMG/ghana.gif" alt=""> ghana</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="paises"><img src="/IMG/uruguay.gif" alt=""> uruguay</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="paises"> <img src="/IMG/coreadelsur.gif" alt=""> corea del sur</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <div class="contSubmit">
+                <button class="button" id="enviar"> <span>Guardar Predicciones</span></button>
+                <p>10</p>
+            </div>
+
+            <h4>Resultados Reales</h4>
+            <div class="contReal">
+
+                <div class="fecha1">
+                    <h5>Fecha 1</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <img src="/IMG/uruguay.gif" alt="bandera Qatar">
+                            <p>URU</p>
+                            <input class="resultados" type="text" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text" disabled>
+                            <p>COR</p>
+                            <img src="/IMG/coreadelsur.gif" alt="bandera ecuador">
+
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <img src="/IMG/portugal.gif" alt="bandera Senegal">
+                            <p>POR</p>
+                            <input class="resultados" type="text" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text" disabled>
+                            <p>GHA</p>
+                            <img src="/IMG/ghana.gif" alt="bandera Holanda">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fecha2">
+                    <h5>Fecha 2</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <img src="/IMG/coreadelsur.gif" alt="bandera Qatar">
+                            <p>COR</p>
+                            <input class="resultados" type="text" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text" disabled>
+                            <p>GHA</p>
+                            <img src="/IMG/ghana.gif" alt="bandera ecuador">
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <img src="/IMG/portugal.gif" alt="bandera Senegal">
+                            <p>POR</p>
+                            <input class="resultados" type="text" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text" disabled>
+                            <p>URU</p>
+                            <img src="/IMG/uruguay.gif" alt="bandera Holanda">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fecha3">
+                    <h5>Fecha 3</h5>
+                    <div class="partido1">
+                        <div class="local">
+                            <img src="/IMG/coreadelsur.gif" alt="bandera Qatar">
+                            <p>COR</p>
+                            <input class="resultados" type="text" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text" disabled>
+                            <p>POR</p>
+                            <img src="/IMG/portugal.gif" alt="bandera ecuador">
+                        </div>
+                    </div>
+                    <div class="partido2">
+                        <div class="local">
+                            <img src="/IMG/ghana.gif" alt="bandera Senegal">
+                            <p>GHA</p>
+                            <input class="resultados" type="text" disabled>
+                        </div>
+                        <div class="visitante">
+                            <input class="resultados" type="text" disabled>
+                            <p>URU</p>
+                            <img src="/IMG/uruguay.gif" alt="bandera Holanda">
+                        </div>
+                    </div>
+                </div>
+
+                <table>
+                    <tr>
+                        <td>POS</td>
+                        <td>Pais</td>
+                        <td>Pts</td>
+                        <td>Pj</td>
+                        <td>Gf</td>
+                        <td>Gc</td>
+                        <td>Dif</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="paises"> <img src="/IMG/portugal.gif" alt=""> portugal</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="paises"><img src="/IMG/ghana.gif" alt=""> ghana</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="paises"><img src="/IMG/uruguay.gif" alt=""> uruguay</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="paises"> <img src="/IMG/coreadelsur.gif" alt=""> corea del sur</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                </table>
+
+                <h4>Puntos Obtenidos en este grupo</h4>
+                <p class="puntos">30</p>
+
+            </div>
         </section>
-        <section id="grupoE">
-            <h3>grupo e</h3>
-        </section>
-        <section id="grupoF">
-            <h3>grupo f</h3>
-        </section>
-        <section id="grupoG">
-            <h3>grupo g</h3>
-        </section>
-        <section id="grupoH">
-            <h3>grupo h</h3>
-        </section>
+
     </main>
 
     <button id="btnMenu" class="hamburger hamburger--collapse" type="button">
         <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
+            <span class="hamburger-inner"></span>
         </span>
     </button>
 
-
-
-
-
     <script src="/JS/tomas.js"></script>
 </body>
+
 </html>

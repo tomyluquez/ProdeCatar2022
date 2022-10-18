@@ -33,6 +33,7 @@ header{
 
 h3{
     font-size: 2rem;
+    text-transform: uppercase;
 }
 
 section{
@@ -42,6 +43,7 @@ section{
     text-align: center;
     text-transform: uppercase;
     border: 2px solid black;
+    background-color: grey;
 }
 
 aside{
@@ -68,7 +70,7 @@ a{
     color: var(--blanco);
 }
 
-.puntos{
+#puntosGA{
     font-size: 3rem;
 }
 
@@ -96,8 +98,18 @@ td{
     border: 1px solid black;
 }
 
-.paises{
+h4{
+    margin-top: 2rem;
+}
+
+h2{
+    text-align: center;
+    
+}
+
+#pais{
     text-align: left;
+    padding-left:  0.5rem;
 }
 
 /* contenedores generales */
@@ -129,7 +141,7 @@ td{
     width: 100%;
     height: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-bottom: 1rem;
 }
@@ -148,6 +160,11 @@ table{
     text-align: center;
     color: var(--blanco);
     margin-bottom: 2rem;
+    margin-top: 4rem;
+}
+
+.primero, .segundo{
+    background-color: green;
 }
 
 
@@ -160,12 +177,12 @@ table{
     font-size: 1rem;
 }
 
-#bonus{
+#bonus{ 
     width: 20px;
-}
+}       
 
 .button{
-    width: 90%;
+    width: 80%;
     height: 40px;
     color: var(--blanco);
     background-color: var(--transparencia);
@@ -176,6 +193,8 @@ table{
     position: relative;
     overflow: hidden;
     transition: all 0.3s ease;
+    margin-top: 4rem;
+    margin-bottom: 3.5rem;
 }
 
 /* JavaScript */

@@ -32,6 +32,7 @@ function simular (evento){
      resultado.innerHTML="3"
      explicacion.innerHTML="En este caso ganarias 3 pts, ya que acertaste exactamente el resultado. Crack"
     } 
+
     
     else if (argReal > saudiReal && 
                  argSimu > saudiSimu &&
