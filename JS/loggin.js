@@ -1,5 +1,6 @@
 // variables generales //
 let passTomas = "tenista1"
+let passPrueba = 'prueba'
 
 // elementos del DOM en variables //
 
@@ -20,6 +21,7 @@ function ingresar (e) {
     let inputPass = d.getElementById("passInput").value
 
     inputPass === passTomas ? d.location="tomas.html" : passIncorrect.innerHTML="Contraseña Incorrecta"
+    inputPass === passPrueba ? d.location="prueba.html" : passIncorrect.innerHTML="Contraseña Incorrecta"
 
     // if (inputPass === passTomas) {
     //    d.location="tomas.html"
